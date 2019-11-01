@@ -1,3 +1,4 @@
 # GreaterOnes
 # Repo für unsere Aufgaben
-#test für Discord
+# Test für Discord
+# Test2 für Discord
