@@ -1,0 +1,9 @@
+Miele Kaffeevollautomat
+
+Touchdisplay, Kapazitive Sensoren: Schnittstelle zwischen Nutzer und Gerät; benötigt zur Eingabe/Auswahl
+Annäherungssensor, Abstandssensor: registriert nähernde Objekte und schaltet die Beleuchtung/das Gerät an
+Temparatursensor: zur Kontrolle der Wassertemperatur; sichert vor Überhitzung
+Wasserstand (wahrsch. Schwimmer): kontrolliert den Füllstand des Wassertanks; bei Bedarf wird so die Pumpe angesprochen und aufgefüllt
+Tassenrandsensor: registriert die eingestellte Tasse und bringt den Zentralauslauf in die optimale Position
+Sensor zur Messung des Füllstands des Abtropfbehälters: verhindert ein Überlaufen und der Benutzer wird durch eine Meldung zur Reinigung aufgefordert
+da Motor zur Bewegung des Zentralauslauf -> wahrscheinlich Sensor zur Messung der Positionsänderung
