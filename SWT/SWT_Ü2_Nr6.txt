@@ -1,0 +1,26 @@
+SWT Ü2 17.10.2019
+
+Aufgabe 6)
+
+1) Atomarer Commit:
+- Commit in Git als Datenbankoperation implementiert
+- Dadurch möglich: Unvollständige Commits erkannen
+  ggf. Rollback durchführen
+  
+2)  
+
+Checkout:
+- In SVN: Initialer Repo-Download
+- In Git: Um Branch auszuwählen bzw. Head zu setzen
+          (kann auch auf Commit gesetzt werden)
+Check-in:
+- In SVN: Lokale Änderungen in zentrales Repo hochladen
+          (push in Git)
+		  
+3) Nein!
+- Verzeichnisse Teil der Versionierung!
+- Würde als Löschen/Hinzufügen interpretiert
+- Umbenennen nur per Git-Client (= neuer Zustand des Verzeichnisses)
+
+4) Nein!
+- Commit lädt den Inhalt der Stage ins lokale Repo!
