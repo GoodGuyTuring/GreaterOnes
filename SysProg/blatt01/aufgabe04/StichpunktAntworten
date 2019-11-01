@@ -1,0 +1,28 @@
+(a) //der Speicherplatz, auf den der Pointer zeigt, wird in der for-Schleife allokiert
+	//falls das die Erstellung eines Arrays sein soll, müsste der Speicherplatz einmal mit passender Größenangabe allokiert werden
+	//so wird ebenfalls nur der letzte allokierte Speicherplatz freigegeben; behoben wenn einmal für 10 Integer allokiert
+1 int* i;
+2 for (int k=0; k<10; k++) {
+3   i = malloc(sizeof(int));
+4   if (i == NULL) { /* hier ausgelassen: Fehlermeldung, Programm beenden*/ }
+5   *i = k;
+6 }
+7 free(i);(
+
+b) 	//die Überprüfung i==NULL; i nicht deklariert
+	//das Array d hat nur zwei Stellen und der Zugriff d[2] somit illegal; stattdessen d[0] und d[1]
+1 double* d;
+2 d = malloc(2*sizeof(double));
+3 if (i == NULL) { /* hier ausgelassen: Fehlermeldung, Programm beenden */}
+4 d[1] = 4.772;
+5 d[2] = -17 * 3.557;
+6 free(d);
+
+(c) //nur für den äußeren Pointer wird Speicher allokiert; der Innere müsste separat allokiert werden + Fehlerkontrolle
+	//somit ist der Zugriff **i nicht möglich; behoben durch allokieren
+	//der innere Pointer muss vor dem äußeren separat gefreet werden
+1 int** i;
+2 i = malloc(sizeof(int*));
+3 if (i == NULL) { /* hier ausgelassen: Fehlermeldung, Programm beenden */ }
+4 **i = 5;
+5 free(i);

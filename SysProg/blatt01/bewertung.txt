@@ -1,0 +1,9 @@
+Aufgabe 1: 4/6 Punkte
+-2 Punkte weil memcopy/memset fehlt
+
+Aufgabe 2: 3/4 Punkte
+-1 weil aufgabenstellung nicht befolgt wurde
+Anmerkung: clean in Makefile
+
+Aufgabe 3: 3/3 Punkte
+

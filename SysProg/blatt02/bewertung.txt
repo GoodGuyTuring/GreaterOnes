@@ -1,0 +1,6 @@
+Aufgabe 5: 0/4 Punkte
+nicht kompillierbar, sowohl mit makefile als auch manuell
+
+Aufgabe 6: 6/6 Punkte
+
+Aufgabe 7: 2/2 Punkte
