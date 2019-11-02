@@ -7,14 +7,26 @@
 
 **SWT**
 - Aufgabe 1)
+  - Teil a)
+  - Teil b)
 - Aufgabe 2)
 - Aufgabe 3)
+  - Teil a)
+  - Teil b)
+  - Teil c)
+  - Teil d)
 - Aufgabe 4)
-- Aufgabe 5)
 
 **SysProg**
 - Aufgabe 1)
+  - Teil a)
+  - Teil b)
+  - Teil c)
+  - Teil d)
 - Aufgabe 2)
+  - Teil a)
+  - Teil b)
+  - Teil c)
 
 **Numerik**
 - ?
