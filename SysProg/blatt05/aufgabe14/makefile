@@ -8,6 +8,6 @@ CFLAGS=-f elf64
 matrix: m_add.o matrix.c
 	clang -o $@ $^
 	
-m_add.o: m_add.asm
+m_add.o: m_add.asm print.asm
 	$(CC) $(CFLAGS) -o $@ $<
 	
