@@ -7,8 +7,7 @@ CFLAGS=-f elf64
 
 #-soname glibc linkt mit GLIBC
 ausgabe: ausgabe.o
-	ld $@ -o $< -dynamic-linker /lib/ld-linux.so.2
-#-no-pie -nostartfiles
+	clang $< -o $@ 
 	
 ausgabe.o: ausgabe.asm
 	$(CC) $(CFLAGS) -o $@ $< 
