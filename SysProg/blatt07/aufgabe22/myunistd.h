@@ -1,6 +1,3 @@
-//Signaturen des vorherigen Blattes
-#include "mystddef.h"
-
 //Signaturen der Wrapper-Funktionen
 struct myrusage;
 ssize_t myread(int fd, void* buf, size_t count);
