@@ -2,17 +2,20 @@
 CC=clang
 CFLAGS = -g -Wall
 LDFLAGS = -g -Wall
-OBJ = test.o mystdlib.o
+OBJ = shell.o mystdlib.o mygetline.o myunistd.o
 
 #Linker-Regel
-test: $(OBJ)
+shell: $(OBJ)
 	$(CC) $(LDFLAGS) -lm $^ -o $@ 
 
 #Compiler-Regeln
-test.o: test.c
-	$(CC) $(CFLAGS) $^  -lm -c -o $@ 
+shell.o: shell.c
+	$(CC) $(CFLAGS) $^ -c -o $@ 
 
 mystdlib.o: mystdlib.c
+	$(CC) $(CFLAGS) -lm -c -o $@ $^
+
+mygetline.o: mygetline.c
 	$(CC) $(CFLAGS) -c -o $@ $^
 
 
