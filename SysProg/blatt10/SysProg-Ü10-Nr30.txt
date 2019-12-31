@@ -1,0 +1,5 @@
+=> mkfifo /tmp/fifo1
+=>	last -a -i > /tmp/fifo1
+1)	cat < /tmp/fifo1 | cut -f1 -d$' ' | tr [a-z] [A-Z] | head -n -2 | cat > lastusers.txt
+2)	cat < /tmp/fifo1 | grep -v "STILL LOGGED IN" | rev |cut -f1 -d$' ' | rev | head -n -2 | cat > lasthosts.txt
+
