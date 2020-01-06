@@ -1,0 +1,7 @@
+Antwort zur Frage am Ende:
+
+Der empfänger müsste prüfen, ob die empfangene Nachricht einem
+bestimmten muster entspricht, aber es kann innerhalb dieses musters auch
+fehler geben, die dann nicht erkannt werden, es kann nur erkannt werden,
+ob eine falsche anzahl an bytes/ bits gesendet wurde, bit-flips o.ä. dinge
+können nicht ermittelt werden ohne zusätzliche Mechanismen

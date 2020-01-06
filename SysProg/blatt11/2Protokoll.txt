@@ -1,0 +1,7 @@
+über ubuntu wsl implementiert
+
+- zu b) nachdem abgeschickt mit enter von client, erscheint nachricht in server fenster
+
+- zu c) wenn zweite Server instanz geöffnet, geht nachricht aus client nur an ursprüngliche
+  server instanz
+  beim dritten Server wie oben
