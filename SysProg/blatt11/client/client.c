@@ -3,6 +3,8 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <arpa/inet.h>
 
 
 int main(void){
@@ -23,7 +25,7 @@ int main(void){
 	server_add.sin_addr.s_addr = inet_addr(eingabe);
 	
 	printf("\nBitte geben Sie einen Port ein: ");
-	scanf("%d", &port);
+	scanf("%hd", &port);
 	server_add.sin_port = htons(port);
 	
 	while(1){
