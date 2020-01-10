@@ -1,0 +1,21 @@
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Aufruf z. B.
+		//testPrint(5);
+		//testPrint(7);
+
+	}
+	
+	//Belegung der Variablen: value = 5 oder value != 5
+	//also 2 Testfälle für Verzweigungs- und Anweisungsabdeckung
+	public static void testPrint(int value) {
+		if (value == 5) { 
+			System.out.println("true"); 
+		} else {
+			System.out.println("false"); 
+		}
+	}
+	
+}
