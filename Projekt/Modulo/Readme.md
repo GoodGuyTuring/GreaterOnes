@@ -1,1 +1,0 @@
-# Kleines Projekt für Python
