@@ -7,4 +7,5 @@
 - [ ] Ausgabe durch Tabelle
 - [ ] Main fertig
 - [ ] (Variablen pivate machen)
+- [ ] Bugfix und Polish
 - [ ] Konvertieren zu Windowns(.exe)
