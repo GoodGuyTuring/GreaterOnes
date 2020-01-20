@@ -1,7 +1,7 @@
 # Kleines Projekt für Python
 ## ToDo
 
-- [ ] Rechner
+- [X] Rechner
 - [ ] Eingabe Fenster
   - [ ] Überprüfung der Eingabe (in der Main)
 - [ ] Ausgabe durch Tabelle
