@@ -1,0 +1,33 @@
+        # window.geometry('640x360')
+        lbl1 = Label(window, text="Init")
+        lbl1.grid(row=0, column=0)
+
+        # lbl2 = Label(text="blank")
+        # lbl2.grid(row=1,clolumn=0)
+        def clicked():
+            lbl1.configure(text="Clicked")
+
+        btn1 = Button(window, text="Test1", command=clicked)
+        btn1.grid(row=0, column=1)
+        txt = Entry(window, width=10)
+        txt.grid(row=1, column=0)
+
+        def enter():
+            res = txt.get()
+            lbl1.configure(text=res)
+
+        btn2 = Button(window, text="Enter", command=enter)
+        btn2.grid(row=1, column=1)
+        bar = Progressbar(window, length=100, maximum=10)
+        bar.grid(row=2, column=0)
+
+        def progess():
+            bar['value'] += 1
+
+        def update():
+            lbl1.configure(text=str(bar['value']))
+            if bar['value'] >= 10:
+                window.destroy()
+
+        btn3 = Button(window, text="Progress", command=lambda: [progess(), update()])
+        btn3.grid(row=2, column=1)
