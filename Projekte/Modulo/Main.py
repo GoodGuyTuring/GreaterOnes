@@ -112,7 +112,7 @@ def calculate(total_old, cost):
 
 def window():
     window = Tk()
-    window.title("Test1")
+    window.title("Programmrechner")
     lbl_total = Label(window, text="Gesamtbetrag")
     lbl_total.grid(row=0, column=0)
     lbl_cost = Label(window, text="Kosten pro Programm")
@@ -129,12 +129,17 @@ def window():
         # plt.matshow(res)
         # plt.show()
         fig, axs = plt.subplots(1,1)
-        collabel = ("Besetzungszettel", "Gesamt", "Programme", "Gesamt", "Einnahmen", "Offset")
+        collabel = ("Besetzung", "Gesamt", "Programme", "Gesamt", "Einnahmen", "Offset")
         axs.axis('tight')
         axs.axis('off')
         print(res)
         res2 = tab_2 = [['%.2f' % j for j in i] for i in res]
         the_table = axs.table(cellText=res2, colLabels=collabel, loc='center')
+
+        #the_table.set_fontsize(12)
+        fig.tight_layout()
+        the_table.auto_set_font_size(True)
+        #the_table.auto_set_column_width(0)
         plt.show()
 
     btn_enter = Button(window, text="Eingabe", command=get_value)
